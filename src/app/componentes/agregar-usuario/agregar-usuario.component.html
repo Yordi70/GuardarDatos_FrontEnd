@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-header">
+        Agregar Usuario
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formUsuarios" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" formControlName="nombre" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Apellido</label>
+                <input type="text" formControlName="apellido" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escribe tu apellido">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input type="email" formControlName="correo" class="form-control" name="" id="" aria-describedby="helpId" placeholder="example@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Celular</label>
+                <input type="number" formControlName="celular" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Celular...">
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-success">Agregar</button>
+                <div class="boton">
+
+                    <button type="button" routerLink="/listar-usuario" class="btn btn-primary ">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
